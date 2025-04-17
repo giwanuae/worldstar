@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Star - المتجر الرسمي</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: url('https://images.unsplash.com/photo-1508610048659-a06b669e9b8d?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 0;
+    }
+    nav a {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: gold;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background-color: gold;
+      color: black;
+    }
+    .content {
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 40px auto;
+      max-width: 900px;
+      border-radius: 12px;
+    }
+    .content h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ffd700;
+    }
+    .product-section {
+      margin-top: 40px;
+    }
+    .product-section h3 {
+      color: gold;
+      border-bottom: 1px solid #555;
+      padding-bottom: 5px;
+    }
+    .product {
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .product-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #fff;
+    }
+    .product-description {
+      margin: 5px 0 10px;
+      color: #ddd;
+    }
+    .buy-btn {
+      padding: 10px 20px;
+      background: gold;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .payment-buttons {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .payment-buttons a {
+      text-align: center;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .paypal { background: gold; color: black; }
+    .stripe { background: #6772e5; color: white; }
+    .googlepay { background: #0f9d58; color: white; }
+    .applepay { background: #000; color: white; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 متجر World Star 🌟</h1>
+  </header>
+
+  <nav>
+    <a href="#weapons">قسم الأسلحة</a>
+    <a href="#bundles">قسم الحزم</a>
+    <a href="#shops">قسم المتاجر</a>
+    <a href="#horses">قسم الخيول</a>
+    <a href="#animals">قسم الحيوانات</a>
+    <a href="#mansions">قسم القصور</a>
+    <a href="#wagons">قسم العربات</a>
+  </nav>
+
+  <div class="content">
+    <h2>مرحبًا بك في متجر World Star الرسمي!</h2>
+    <p>اختر القسم الذي ترغب في زيارته من القائمة أعلاه. جميع العناصر المعروضة هنا حصرية لسيرفرنا على RedM ويمكن الحصول عليها عند الشراء مباشرة بعد التأكيد.</p>
+
+    <div class="product-section" id="weapons">
+      <h3>🗡️ قسم الأسلحة</h3>
+      <div class="product">
+        <div class="product-title">بندقية ذهبية</div>
+        <div class="product-description">سلاح فاخر بلون ذهبي – 25,000$</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+      <div class="product">
+        <div class="product-title">مسدس مزخرف</div>
+        <div class="product-description">نقوش عربية على قبضة المسدس – 15,000$</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+    </div>
+
+    <div class="product-section" id="bundles">
+      <h3>🎁 قسم الحزم</h3>
+      <div class="product">
+        <div class="product-title">حزمة البقاء</div>
+        <div class="product-description">تتضمن: سلاح + خيل + 5000 ذهب</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+    </div>
+
+    <div class="product-section" id="shops">
+      <h3>🏪 قسم المتاجر</h3>
+      <div class="product">
+        <div class="product-title">متجر أسلحة خاص في فالنتاين</div>
+        <div class="product-description">موقع استراتيجي في قلب المدينة</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+    </div>
+
+    <div class="product-section" id="horses">
+      <h3>🐎 قسم الخيول</h3>
+      <div class="product">
+        <div class="product-title">حصان عربي أسود نادر</div>
+        <div class="product-description">سرعة 10/10 – تحمّل عالي</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+    </div>
+
+    <div class="product-section" id="animals">
+      <h3>🐾 قسم الحيوانات</h3>
+      <div class="product">
+        <div class="product-title">نمر مروض</div>
+        <div class="product-description">حيوان نادر – قابل للترويض – مظهر مهيب</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+    </div>
+
+    <div class="product-section" id="mansions">
+      <h3>🏰 قسم القصور</h3>
+      <div class="product">
+        <div class="product-title">قصر إمبراطوري في بلاك ووتر</div>
+        <div class="product-description">5 غرف – حديقة خاصة – مسبح</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+    </div>
+
+    <div class="product-section" id="wagons">
+      <h3>🐎 قسم العربات</h3>
+      <div class="product">
+        <div class="product-title">عربة مدرعة</div>
+        <div class="product-description">مناسبة للمهام الخاصة – مقاومة للرصاص</div>
+        <a href="#" class="buy-btn">شراء</a>
+      </div>
+    </div>
+
+    <div class="payment-buttons">
+      <a class="paypal" href="#" target="_blank">💳 الدفع عبر PayPal</a>
+      <a class="stripe" href="#" target="_blank">🧾 الدفع عبر Stripe (Google/Apple Pay)</a>
+      <a class="googlepay" href="#" target="_blank">💰 الدفع عبر Google Pay</a>
+      <a class="applepay" href="#" target="_blank">🍏 الدفع عبر Apple Pay</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; World Star 2025</p>
+  </footer>
+</body>
+</html>
